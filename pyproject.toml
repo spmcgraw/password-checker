@@ -1,7 +1,7 @@
 [project]
 name = "passwordchecker"
 version = "0.1.0"
-description = "Add your description here"
+description = "Password checker that accesses a Proton Pass Vault to validate it has not been hacked"
 readme = "README.md"
 authors = [
     { name = "Sean McGraw", email = "spmcgraw@gmail.com" }
@@ -10,7 +10,7 @@ requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-passwordchecker = "passwordchecker:main"
+passwordchecker = "passwordchecker.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.1,<0.14.0"]
