@@ -29,7 +29,7 @@ For each login in the vault, the tool prints one of:
 ## Project layout
 
 ```
-passwordChecker/
+password-checker/
 ├── pyproject.toml
 └── src/passwordchecker/
     └── main.py      # Proton Pass access, HIBP lookup, CLI entry point
