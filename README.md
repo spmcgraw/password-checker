@@ -9,7 +9,7 @@ A command-line tool that reads the login passwords stored in a [Proton Pass](htt
 - Python 3.14+
 - [uv](https://docs.astral.sh/uv/)
 - [Proton Pass CLI](https://proton.me/pass) (`pass-cli`) installed and signed in
-- The [`requests`](https://requests.readthedocs.io/) library (see the note under [Known limitations](#known-limitations))
+- The [`requests`](https://requests.readthedocs.io/) library
 
 ## Usage
 
@@ -21,14 +21,14 @@ uv run passwordchecker
 
 For each login in the vault, the tool prints one of:
 
-```
+```text
 <password> for <title> was found <n> times... you should probably change your password
 <password> was NOT found. Carry on!
 ```
 
 ## Project layout
 
-```
+```text
 password-checker/
 ├── pyproject.toml
 └── src/passwordchecker/
@@ -38,7 +38,7 @@ password-checker/
 ## Roadmap
 
 - [ ] Stop printing passwords in plaintext; report only the item title and breach count
-- [ ] Declare `requests` in `pyproject.toml` (`uv add requests`); a fresh install currently fails without it
+- [x] Declare `requests` in `pyproject.toml` (`uv add requests`); a fresh install currently fails without it
 - [ ] Make the vault name configurable (currently hard-coded to `Personal` in `main()`)
 - [ ] Check more item types than `login`
 - [ ] Add tests
